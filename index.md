@@ -3,15 +3,16 @@ One of the disadvantages of Selenium and Appium is the steep learning curve requ
 
 ### **Components**
 
-| Component         | Java API                                                              |
-| ----------------- | --------------------------------------------------------------------- |
-| Web Automation    | [Selenium](https://www.seleniumhq.org/download/)                      |
-| Mobile Automation | [Appium](http://appium.io/)                                           |
-| Test Framework    | [TestNG](http://testng.org/doc/download.html)                         |
-| Logging Tool      | [Log4J2](https://logging.apache.org/log4j/2.0/download.html)          |
-| ExtentReports     | [ExtentReports](http://relevantcodes.com/extentreports-for-selenium/) |
-| Excel Data        | [Apache POI](https://poi.apache.org/download.html)                    |
-| SQL Data          | [MySQL Java API Connector](https://dev.mysql.com/doc/connectors/en/)  |
+| Component         | Java API                                                                                                                       |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| Web Automation    | [Selenium](https://www.seleniumhq.org/download/)                                                                               |
+| Mobile Automation | [Appium](http://appium.io/)                                                                                                    |
+| Test Framework    | [TestNG](http://testng.org/doc/download.html)                                                                                  |
+| Logging Tool      | [Log4J2](https://logging.apache.org/log4j/2.0/download.html)                                                                   |
+| Reporting Tool    | [ExtentReports](http://relevantcodes.com/extentreports-for-selenium/)                                                          |
+| Excel             | [Apache POI](https://poi.apache.org/download.html)                                                                             |
+| MySQL             | [MySQL Connector](https://dev.mysql.com/doc/connectors/en/)                                                                    |
+| MSSQL             | [MSSQL Connector](https://docs.microsoft.com/en-us/sql/connect/jdbc/microsoft-jdbc-driver-for-sql-server?view=sql-server-ver15)|
 
 ### **Usage**
 #### **Web Automation**
