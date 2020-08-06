@@ -1,6 +1,3 @@
-# **VERIFICO**
-Verifico is a Test Automation Library built on top of Selenium and Appium that aims to automate both Web and Mobile Applications.
-
 ## **Background**
 One of the disadvantages of Selenium and Appium is the steep learning curve required for users to be able to implement it. One also have to go over issues such as automation test flakiness, unhandled exceptions, etc. so they could learn how to properly implement commands of Selenium and Appium. The project is built in order to eliminate this issue.
 
