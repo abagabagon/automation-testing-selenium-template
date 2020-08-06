@@ -1,32 +1,20 @@
-## **Background**
+### **Background**
 One of the disadvantages of Selenium and Appium is the steep learning curve required for users to be able to implement it. One also have to go over issues such as automation test flakiness, unhandled exceptions, etc. so they could learn how to properly implement commands of Selenium and Appium. The project is built in order to eliminate this issue.
 
-## **Components**
-Test Framework
-To eliminate the issue of Selenium/Appium not having its own Testing Framework, the automation tool will be integrated with [TestNG](http://testng.org/doc/download.html).
+### **Components**
 
-### **Logging Tool**
-Tool to be used is [Log4J2](https://logging.apache.org/log4j/2.0/download.html) which is a Java-based logging utility.
+| Component         | Java API                                                              |
+| ----------------- | --------------------------------------------------------------------- |
+| Web Automation    | [Selenium](https://www.seleniumhq.org/download/)                      |
+| Mobile Automation | [Appium](http://appium.io/)                                           |
+| Test Framework    | [TestNG](http://testng.org/doc/download.html)                         |
+| Logging Tool      | [Log4J2](https://logging.apache.org/log4j/2.0/download.html)          |
+| ExtentReports     | [ExtentReports](http://relevantcodes.com/extentreports-for-selenium/) |
+| Excel Data        | [Apache POI](https://poi.apache.org/download.html)                    |
+| SQL Data          | [MySQL Java API Connector](https://dev.mysql.com/doc/connectors/en/)  |
 
-### **Reporting Tool**
-Tool to be used is [ExtentReports](http://relevantcodes.com/extentreports-for-selenium/) which is also a Java Library that could produce interactive and detailed reports in HTML Format.
-
-### **Test Management Tool Integration**
-As an added reporting capability, it is also planned to integrate [TestRail](https://www.gurock.com/testrail/docs/api/getting-started/binding-java)’s Java API Binding so automated test results can be logged directly to the Test Management Tool in real time.
-
-### **DevOps** 
-For the Automation Scripts to be integrated in DevOps, automation project has been created as a [Maven](https://maven.apache.org/download.cgi) project so the tool can be utilized for Build / Dependency Management.
-
-### **Data**
-
-#### **Excel Data**
-For providing Test Data, [Apache POI](https://poi.apache.org/download.html) has been integrated so users would be able to retrieve data from external MS Office Files.
-
-#### **SQL Data**
-The [MySQL Java API Connector](https://dev.mysql.com/doc/connectors/en/) are being planned to be added as well for querying MySQL Databases. Can be used for verifying Lists and Reports.
-
-## **Usage**
-### **Web Automation**
+### **Usage**
+#### **Web Automation**
 1. **Selenium (Web)**
 
 ```java
@@ -53,10 +41,10 @@ WebAutomation I = new AppiumWebAutomation(Mobile.Android, appiumServer, platform
 
 Same with `Selenium`, available commands require Objects as `By` Objects.
 
-### **Mobile Automation**
+#### **Mobile Automation**
 1. **Appium** (Development In-progress)
 
-### **Excel Data**
+#### **Excel Data**
 
 1. **XLS Excel Files**
 
@@ -85,7 +73,7 @@ public Object[][] getAccountsData() {
 }
 ```
 
-### **SQL Data**
+#### **SQL Data**
 
 ```java
 String sqlType = "MySQL";
