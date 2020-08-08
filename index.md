@@ -7,7 +7,6 @@ One of the disadvantages of Selenium and Appium is the steep learning curve requ
 | ----------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | Web Automation    | [Selenium](https://www.seleniumhq.org/download/)                                                                               |
 | Mobile Automation | [Appium](http://appium.io/)                                                                                                    |
-| Test Framework    | [TestNG](http://testng.org/doc/download.html)                                                                                  |
 | Logging Tool      | [Log4J2](https://logging.apache.org/log4j/2.0/download.html)                                                                   |
 | Reporting Tool    | [ExtentReports](http://relevantcodes.com/extentreports-for-selenium/)                                                          |
 | Excel             | [Apache POI](https://poi.apache.org/download.html)                                                                             |
