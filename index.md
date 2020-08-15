@@ -15,74 +15,73 @@ One of the disadvantages of Selenium and Appium is the steep learning curve requ
 | MySQL             | [MySQL Connector](https://dev.mysql.com/doc/connectors/en/)                                                                    |
 | MSSQL             | [MSSQL Connector](https://docs.microsoft.com/en-us/sql/connect/jdbc/microsoft-jdbc-driver-for-sql-server?view=sql-server-ver15)|
 
-### **Usage**
-#### **Web Automation**
-1. **Selenium (Web)**
+### **Java Dependency**
 
-```java
-WebAutomation I = new SeleniumWebAutomation();
+#### **Maven**
+
+```xml
+<!-- https://mvnrepository.com/artifact/com.github.abagabagon/verifico -->
+<dependency>
+    <groupId>com.github.abagabagon</groupId>
+    <artifactId>verifico</artifactId>
+    <version>1.0.4</version>
+</dependency>
 ```
 
-Available commands require Objects as `By` Objects. So it's recommended to apply Page Object Model for its usage.
+### **Usage**
+
+#### **Web Automation**
+
+For Web Application Automation, create an instance of the `WebAutomation` Object which is shown below:
 
 ```java
-I.fill(PageLogin.EMAIL_ADDRESS_TEXTBOX, "abagabagon@yopmail.com");
-I.fill(PageLogin.PASSWORD_TEXTBOX, "ABCabc123");
+Browser browser = Browser.CHROME;
+boolean isHeadless = false;
+
+Verifico verifico = new Verifico();
+WebAutomation I = verifico.getWebAutomation(browser, isHeadless);
+```
+
+Web Application Automation on Mobile Devices is also supported. Same as above, an instance of the `WebAutomation` Object will need to be created but with different parameters:
+
+```java
+String deviceName = "YT9117XT7C";
+Mobile mobile = Mobile.Android
+String platformVersion = "6.0.1";
+Browser browser = Browser.CHROME;
+URL appiumServerUrl = new URL("http://127.0.0.1:4723/wd/hub");
+
+Verifico verifico = new Verifico();
+WebAutomation I = verifico.getWebAutomation(deviceName, mobile, platformVersion, browser, appiumServerUrl);
+```
+
+```java
+I.openBrowser();
+I.goTo("http://www.somewebsite.com/");
+I.type(PageLogin.EMAIL_ADDRESS_TEXTBOX, "abagabagon@yopmail.com");
+I.type(PageLogin.PASSWORD_TEXTBOX, "ABCabc123");
 I.click(PageLogin.LOGIN_BUTTON);
 ```
 
-2. **Appium (Mobile Web)**
-
-```java
-URL appiumServer = new URL("http://127.0.0.1:4723/wd/hub");
-String platformVersion = "6.0.1";
-String deviceName = "YT9117XT7C";
-
-WebAutomation I = new AppiumWebAutomation(Mobile.Android, appiumServer, platformVersion, deviceName);
-```
-
-Same with `Selenium`, available commands require Objects as `By` Objects.
-
-#### **Mobile Automation**
-1. **Appium** (Development In-progress)
-
 #### **Excel Data**
 
-1. **XLS Excel Files**
-
 ```java
+Excel excelType = Excel.XLS;
 String filePath = "./src/resources/data/excel/staff-accounts.XLS";
 
-ExcelData excelData = new XLSExcelData(filePath);
-```
-
-2. **XLSX Excel Files**
-
-```java
-String filePath = "./src/resources/data/excel/staff-accounts.XLSX";
-
-ExcelData excelData = new XLSXExcelData(filePath);
-```
-
-Originally intended for use in a TestNG Test Framework, it can be used for retrieving test data for tests in a `@DataProvider` Method.
-
-```java
-@DataProvider(name = "Accounts")
-public Object[][] getAccountsData() {
-	ExcelData excelData = new XLSXExcelData("./src/resources/data/excel/staff-accounts.XLSX");
-	Object[][] data = excelData.getSheetData("Manager", false);
-	return data;
-}
+Verifico verifico = new Verifico();
+ExcelData excelData = verifico.getExcelData(excelType, filePath);
 ```
 
 #### **SQL Data**
 
 ```java
-String sqlType = "MySQL";
+SQL sqlType = "MySQL";
 String dbServer = "127.0.0.1";
 String dbName = "northwind";
 String user = "abagabagon";
 String password = "ABCabc123";
 
-SQLData sqlData = new SQLData(sqlType, dbServer, dbName, user, password);
+Verifico verifico = new Verifico();
+SQLData sqlData = verifico.getSQLData(sqlType, dbServer, dbName, user, password);
 ```
