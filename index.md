@@ -1,9 +1,9 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![Maven Central](https://img.shields.io/maven-central/v/com.github.abagabagon/verifico.svg?label=Maven%20Central)](https://search.maven.org/search?q=g:%22com.github.abagabagon%22%20AND%20a:%22verifico%22)
 
-# **Background**
+### **Background**
 One of the disadvantages of Selenium and Appium is the steep learning curve required for users to be able to implement it. One also have to go over issues such as automation test flakiness, unhandled exceptions, etc. so they could learn how to properly implement commands of Selenium and Appium. The project is built in order to eliminate this issue.
 
-# **Components**
+### **Components**
 
 | Component         | Java API                                                                                                      | Version     |
 | ----------------- | ------------------------------------------------------------------------------------------------------------- | ----------- |
@@ -15,9 +15,9 @@ One of the disadvantages of Selenium and Appium is the steep learning curve requ
 | MySQL             | [MySQL Connector](https://dev.mysql.com/doc/connectors/en/)                                                   | 8.0.21      |
 | MSSQL             | [MSSQL Connector](https://docs.microsoft.com/en-us/sql/connect/sql-connection-libraries?view=sql-server-ver15)| 8.2.2.jre8  |
 
-# **Java Dependency**
+### **Java Dependency**
 
-## **Maven**
+#### **Maven**
 
 ```xml
 <!-- https://mvnrepository.com/artifact/com.github.abagabagon/verifico -->
@@ -28,9 +28,9 @@ One of the disadvantages of Selenium and Appium is the steep learning curve requ
 </dependency>
 ```
 
-# **Usage**
+### **Usage**
 
-## **Web Automation**
+#### **Web Automation**
 
 For Web Application Automation, create an instance of the `WebAutomation` Object which is shown below:
 
@@ -65,9 +65,9 @@ I.type(PageLogin.PASSWORD_TEXTBOX, "ABCabc123");
 I.click(PageLogin.LOGIN_BUTTON);
 ```
 
-### **Web Automation Commands**
+##### **Web Automation Commands**
 
-#### **Browser Actions**
+###### **Browser Actions**
 
 | Command               | Description                                          |
 | --------------------- | ---------------------------------------------------- |
@@ -86,18 +86,19 @@ I.click(PageLogin.LOGIN_BUTTON);
 | closeTab              | Closes Tab of a Web Browser                          |
 | closeBrowser          | Closes Web Browser                                   |
 
-#### **User Actions**
+###### **User Actions**
 
 | Command                               | Description                                                                                                       |
 | ------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
 | point                                 | Point mouse to the specified Web Element                                                                          |
+| pointJS                               | Point mouse to the specified Web Element (utilizing Javascript)                                                   |
 | click                                 | Clicks the specified Web Element. Used for Elements that are clickable                                            |
 | clickJS                               | Clicks the specified Web Element (utilizing Javascript). Used for Elements that are clickable                     |
 | clickAndHold                          | Clicks and holds the specified Web Element. Used for Elements that are clickable                                  |
-| clickFromObjectListBasedOnText        | Clicks the specified Web Element from an Object List based on text value                                          |
+| clickFromListBasedOnText              | Clicks the specified Web Element from an Object List based on text value                                          |
 | clickFromTableBasedOnText             | Clicks the specified Web Element from a row in a table based on text value from the same row                      |
 | doubleClick                           | Double clicks the specified Web Element. Used for Elements that are clickable                                     |
-| doubleClickFromObjectListBasedOnText  | Double clicks the specified Web Element from an Object List based on text value                                   |
+| doubleClickFromListBasedOnText        | Double clicks the specified Web Element from an Object List based on text value                                   |
 | doubleClickFromTableBasedOnText       | Clicks the specified Web Element from a row in a table based on text value from the same row                      |
 | dragAndDrop                           | Drags a specified Web Element and drops it at target element. Used for Elements that can be dragged               |
 | type                                  | Simulates typing into a text box/area Web Element                                                                 |
@@ -118,7 +119,7 @@ I.click(PageLogin.LOGIN_BUTTON);
 | getDropDownListValue                  | Gets the selected option of the Drop-down List Web Element                                                        |
 | wait                                  | Waits for a specific time (Seconds)                                                                               |
 
-#### **Verifications**
+###### **Verifications**
 
 | Command                 | Description                                                                                  |
 | ----------------------- | -------------------------------------------------------------------------------------------- |
@@ -138,7 +139,7 @@ I.click(PageLogin.LOGIN_BUTTON);
 | verifyNotSelected       | Verifies Web Element is not selected on the Web Page. Used for Check Boxes and Radio Buttons |
 | verifyAlertMessage      | Verifies Javascript Alert Message displayed if equal to expected message                     |
 
-## **Excel Data**
+#### **Excel Data**
 
 ```java
 Excel excelType = Excel.XLS;
@@ -148,7 +149,7 @@ Verifico verifico = new Verifico();
 ExcelData excelData = verifico.getExcelData(excelType, filePath);
 ```
 
-## **SQL Data**
+#### **SQL Data**
 
 ```java
 SQL sqlType = "MySQL";
