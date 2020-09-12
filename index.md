@@ -24,7 +24,7 @@ One of the disadvantages of Selenium and Appium is the steep learning curve requ
 <dependency>
     <groupId>com.github.abagabagon</groupId>
     <artifactId>verifico</artifactId>
-    <version>1.0.4</version>
+    <version>1.1.1</version>
 </dependency>
 ```
 
