@@ -8,11 +8,11 @@ One of the disadvantages of Selenium and Appium is the steep learning curve requ
 | Component         | Java API                                                                                                      | Version     |
 | ----------------- | ------------------------------------------------------------------------------------------------------------- | ----------- |
 | Web Automation    | [Selenium](https://www.seleniumhq.org/download/)                                                              | 3.141.59    |
-| Mobile Automation | [Appium](http://appium.io/)                                                                                   | 7.3.0       |
-| Logging Tool      | [Log4J2](https://logging.apache.org/log4j/2.0/download.html)                                                  | 2.13.3      |
+| Mobile Automation | [Appium](http://appium.io/)                                                                                   | 7.4.1       |
+| Logging Tool      | [Log4J2](https://logging.apache.org/log4j/2.0/download.html)                                                  | 2.14.0      |
 | Reporting Tool    | [ExtentReports](http://relevantcodes.com/extentreports-for-selenium/)                                         | 5.0.1       |
 | Excel             | [Apache POI](https://poi.apache.org/download.html)                                                            | 4.1.2       |
-| MySQL             | [MySQL Connector](https://dev.mysql.com/doc/connectors/en/)                                                   | 8.0.21      |
+| MySQL             | [MySQL Connector](https://dev.mysql.com/doc/connectors/en/)                                                   | 8.0.22      |
 | MSSQL             | [MSSQL Connector](https://docs.microsoft.com/en-us/sql/connect/sql-connection-libraries?view=sql-server-ver15)| 8.2.2.jre8  |
 
 ### **Java Dependency**
@@ -24,7 +24,7 @@ One of the disadvantages of Selenium and Appium is the steep learning curve requ
 <dependency>
     <groupId>com.github.abagabagon</groupId>
     <artifactId>verifico</artifactId>
-    <version>1.1.1</version>
+    <version>1.2.1</version>
 </dependency>
 ```
 
@@ -117,6 +117,8 @@ I.click(PageLogin.LOGIN_BUTTON);
 | getAttributeValue                     | Get the value of the specified attribute of the Web Element                                                       |
 | getAttributeValueFromTableBasedOnText | Get value of the specified Web Element from a row in a table based on text value from the same row                |
 | getDropDownListValue                  | Gets the selected option of the Drop-down List Web Element                                                        |
+| see                                   | Sees if a Web Element is displayed on Web Page.                                                                   |
+| dontSee                               | Sees if a Web Element is not displayed on Web Page.                                                               |
 | wait                                  | Waits for a specific time (Seconds)                                                                               |
 
 ###### **Verifications**
@@ -131,6 +133,7 @@ I.click(PageLogin.LOGIN_BUTTON);
 | verifyAttributeValue    | Verifies the value of the specified attribute if equal to the expected value                 |
 | verifyDropDownListValue | Verifies Drop-down List Web Element Value if equal to expected text value                    |
 | verifyText              | Verifies Web Element with text if equal to expected text value                               |
+| verifyTextFromList      | Verifies if text value exists from texts on Web Element List.                                |
 | verifyDisplayed         | Verifies if Web Element is displayed on Web Page                                             |
 | verifyNotDisplayed      | Verifies Web Element is not displayed on the Web Page                                        |
 | verifyEnabled           | Verifies Web Element is enabled on the Web Page                                              |
