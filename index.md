@@ -117,30 +117,35 @@ I.click(PageLogin.LOGIN_BUTTON);
 | getAttributeValue                     | Get the value of the specified attribute of the Web Element                                                       |
 | getAttributeValueFromTableBasedOnText | Get value of the specified Web Element from a row in a table based on text value from the same row                |
 | getDropDownListValue                  | Gets the selected option of the Drop-down List Web Element                                                        |
-| see                                   | Sees if a Web Element is displayed on Web Page.                                                                   |
-| dontSee                               | Sees if a Web Element is not displayed on Web Page.                                                               |
+| acceptAlert                           | Accepts Javascript Alert                                                                                          |
+| cancelAlert                           | Cancels Javascript Alert                                                                                          |
+| typeAlert                             | Simulates typing at Javascript Alert Text Box                                                                     |
 | wait                                  | Waits for a specific time (Seconds)                                                                               |
 
 ###### **Verifications**
 
-| Command                 | Description                                                                                  |
-| ----------------------- | -------------------------------------------------------------------------------------------- |
-| verifyUrl               | Verifies Page URL of Web Page if equal to the expected URL                                   |
-| verifyTitle             | Verifies Page Title of Web Page if equal to the expected Title                               |
-| verifyPartialUrl        | Verifies Page URL of Web Page if partially equal to the expected URL                         |
-| verifyClickable         | Verifies if the Web Element is clickable or not                                              |
-| verifyValue             | Verifies the value of INPUT or TEXTAREA Web Elements if equal to the expected value          |
-| verifyAttributeValue    | Verifies the value of the specified attribute if equal to the expected value                 |
-| verifyDropDownListValue | Verifies Drop-down List Web Element Value if equal to expected text value                    |
-| verifyText              | Verifies Web Element with text if equal to expected text value                               |
-| verifyTextFromList      | Verifies if text value exists from texts on Web Element List.                                |
-| verifyDisplayed         | Verifies if Web Element is displayed on Web Page                                             |
-| verifyNotDisplayed      | Verifies Web Element is not displayed on the Web Page                                        |
-| verifyEnabled           | Verifies Web Element is enabled on the Web Page                                              |
-| verifyDisabled          | Verifies Web Element is disabled on the Web Page                                             |
-| verifySelected          | Verifies Web Element is selected on the Web Page. Used for Check Boxes and Radio Buttons     |
-| verifyNotSelected       | Verifies Web Element is not selected on the Web Page. Used for Check Boxes and Radio Buttons |
-| verifyAlertMessage      | Verifies Javascript Alert Message displayed if equal to expected message                     |
+| Command               | Description                                                                                  |
+| --------------------- | -------------------------------------------------------------------------------------------- |
+| seeUrl                | Verifies Page URL of Web Page if equal to the expected URL                                   |
+| dontSeeUrl            | Verifies Page URL of Web Page if not equal to the specified URL                              |
+| seeTitle              | Verifies Page Title of Web Page if equal to the expected Title                               |
+| dontSeeTitle          | Verifies Page Title of Web Page if not equal to the specified Title                          |
+| seeValue              | Verifies the value of INPUT or TEXTAREA Web Elements if equal to the expected value          |
+| dontSeeValue          | Verifies the value of INPUT or TEXTAREA Web Elements if not equal to the specified value     |
+| seeAttributeValue     | Verifies the value of the specified attribute if equal to the expected value                 |
+| dontSeeAttributeValue | Verifies the value of the specified attribute if equal to the expected value                 |
+| selectedDropDown      | Verifies Drop-down List Web Element Value if equal to expected text value                    |
+| seeText               | Verifies Web Element with text if equal to expected text value                               |
+| dontSeeText           | Verifies Web Element with text if not equal to specified text value                          |
+| seeTextFromList       | Verifies if text value exists from texts on Web Element List.                                |
+| dontSeeTextFromList   | Verifies if text value does not exist from texts on Web Element List.                        |
+| see                   | Verifies if Web Element is displayed on Web Page                                             |
+| dontSee               | Verifies Web Element is not displayed on the Web Page                                        |
+| seeEnabled            | Verifies Web Element is enabled on the Web Page                                              |
+| seeDisabled           | Verifies Web Element is disabled on the Web Page                                             |
+| selected              | Verifies Web Element is selected on the Web Page. Used for Check Boxes and Radio Buttons     |
+| deselected            | Verifies Web Element is not selected on the Web Page. Used for Check Boxes and Radio Buttons |
+| seeAlertMessage       | Verifies Javascript Alert Message displayed if equal to expected message                     |
 
 #### **Excel Data**
 
