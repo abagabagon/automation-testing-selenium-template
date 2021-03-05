@@ -112,38 +112,42 @@ I.click(PageLogin.LOGIN_BUTTON);
 
 ###### **Verifications**
 
-| Command                                                       | Description                                                                                                                              |
-| ------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| seeUrl                                                        | Verifies Page URL of Web Page if equal to the expected URL.                                                                              |
-| dontSeeUrl                                                    | Verifies Page URL of Web Page if not equal to the specified URL.                                                                         |
-| seePartialUrl                                                 | Verifies Page URL of Web Page if partially equal to the expected URL.                                                                    |
-| dontSeePartialUrl                                             | Verifies Page URL of Web Page if not partially equal to the expected URL.                                                                |
-| seeTitle                                                      | Verifies Page Title of Web Page if equal to the expected Title.                                                                          |
-| dontSeeTitle                                                  | Verifies Page Title of Web Page if not equal to the specified Title.                                                                     |
-| typed                                                         | Verifies the value of INPUT or TEXTAREA Web Elements if equal to the expected value.                                                     |
-| didntType                                                     | Verifies the value of INPUT or TEXTAREA Web Elements if not equal to the specified value.                                                |
-| seeAttributeValue                                             | Verifies the value of the specified attribute if equal to the expected value.                                                            |
-| dontSeeAttributeValue                                         | Verifies the value of the specified attribute if equal to the expected value.                                                            |
-| selectedDropDown                                              | Verifies Drop-down List Web Element Value if equal to expected text value.                                                               |
-| seeText                                                       | Verifies Web Element with text if equal to expected text value.                                                                          |
-| dontSeeText                                                   | Verifies Web Element with text if not equal to specified text value.                                                                     |
-| seeTextFromListElement                                        | Verifies if text value exists from texts on Web Element List.                                                                            |
-| dontSeeTextFromListElement                                    | Verifies if text value does not exist from texts on Web Element List.                                                                    |
-| seeTextOfTableRowElementBasedOnTableRowElementText            | Verifies Web Element with text if equal to expected text value from a row in a table based on text value from the same row.              |
-| dontSeeTextOfTableRowElementBasedOnTableRowElementText        | Verifies Web Element with text if not equal to specified text value from a row in a table based on text value from the same row.         |
-| seePartialText                                                | Verifies Web Element with text if equal to expected partial text value.                                                                  |
-| dontSeePartialText                                            | Verifies Web Element with text if not equal to specified partial text value.                                                             |
-| seePartialTextFromListElement                                 | Verifies if text value exists from texts on Web Element List.                                                                            |
-| dontSeePartialTextFromListElement                             | Verifies if text value does not exist from texts on Web Element List.                                                                    |
-| seePartialTextOfTableRowElementBasedOnTableRowElementText     | Verifies Web Element with text if equal to expected partial text value from a row in a table based on text value from the same row.      |
-| dontSeePartialTextOfTableRowElementBasedOnTableRowElementText | Verifies Web Element with text if not equal to specified partial text value from a row in a table based on text value from the same row. |
-| see                                                           | Verifies if Web Element is displayed on Web Page                                                                                         |
-| dontSee                                                       | Verifies Web Element is not displayed on the Web Page                                                                                    |
-| seeEnabled                                                    | Verifies Web Element is enabled on the Web Page                                                                                          |
-| seeDisabled                                                   | Verifies Web Element is disabled on the Web Page                                                                                         |
-| selected                                                      | Verifies Web Element is selected on the Web Page. Used for Check Boxes and Radio Buttons                                                 |
-| deselected                                                    | Verifies Web Element is not selected on the Web Page. Used for Check Boxes and Radio Buttons                                             |
-| seeAlertMessage                                               | Verifies Javascript Alert Message displayed if equal to expected message                                                                 |
+| Command                                                           | Description                                                                                                                              |
+| ----------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| seeUrl                                                            | Verifies Page URL of Web Page if equal to the expected URL.                                                                              |
+| dontSeeUrl                                                        | Verifies Page URL of Web Page if not equal to the specified URL.                                                                         |
+| seePartialUrl                                                     | Verifies Page URL of Web Page if partially equal to the expected URL.                                                                    |
+| dontSeePartialUrl                                                 | Verifies Page URL of Web Page if not partially equal to the expected URL.                                                                |
+| seeTitle                                                          | Verifies Page Title of Web Page if equal to the expected Title.                                                                          |
+| dontSeeTitle                                                      | Verifies Page Title of Web Page if not equal to the specified Title.                                                                     |
+| typed                                                             | Verifies the value of INPUT or TEXTAREA Web Elements if equal to the expected value.                                                     |
+| didntType                                                         | Verifies the value of INPUT or TEXTAREA Web Elements if not equal to the specified value.                                                |
+| seeAttributeValue                                                 | Verifies the value of the specified attribute if equal to the expected value.                                                            |
+| dontSeeAttributeValue                                             | Verifies the value of the specified attribute if equal to the expected value.                                                            |
+| selectedDropDown                                                  | Verifies Drop-down List Web Element Value if equal to expected text value.                                                               |
+| seeText                                                           | Verifies Web Element with text if equal to expected text value.                                                                          |
+| dontSeeText                                                       | Verifies Web Element with text if not equal to specified text value.                                                                     |
+| seeTextFromListElement                                            | Verifies if text value exists from texts on Web Element List.                                                                            |
+| dontSeeTextFromListElement                                        | Verifies if text value does not exist from texts on Web Element List.                                                                    |
+| seeTextOfTableRowElementBasedOnTableRowElementText                | Verifies Web Element with text if equal to expected text value from a row in a table based on text value from the same row.              |
+| dontSeeTextOfTableRowElementBasedOnTableRowElementText            | Verifies Web Element with text if not equal to specified text value from a row in a table based on text value from the same row.         |
+| seeTextOfTableRowListElementBasedOnTableRowElementText            | Verifies text value if it exists in a Web Element List from a row in a table based on text value from the same row.                      |
+| dontSeeTextOfTableRowListElementBasedOnTableRowElementText        | Verifies text value if it does not exist in a Web Element List from a row in a table based on text value from the same row.              |
+| seePartialText                                                    | Verifies Web Element with text if equal to expected partial text value.                                                                  |
+| dontSeePartialText                                                | Verifies Web Element with text if not equal to specified partial text value.                                                             |
+| seePartialTextFromListElement                                     | Verifies if text value exists from texts on Web Element List.                                                                            |
+| dontSeePartialTextFromListElement                                 | Verifies if text value does not exist from texts on Web Element List.                                                                    |
+| seePartialTextOfTableRowElementBasedOnTableRowElementText         | Verifies Web Element with text if equal to expected partial text value from a row in a table based on text value from the same row.      |
+| dontSeePartialTextOfTableRowElementBasedOnTableRowElementText     | Verifies Web Element with text if not equal to specified partial text value from a row in a table based on text value from the same row. |
+| seePartialTextOfTableRowListElementBasedOnTableRowElementText     | Verifies partial text value if it exists in a Web Element List from a row in a table based on text value from the same row.              |
+| dontSeePartialTextOfTableRowListElementBasedOnTableRowElementText | Verifies partial text value if it does not exist in a Web Element List from a row in a table based on text value from the same row.      |
+| see                                                               | Verifies if Web Element is displayed on Web Page                                                                                         |
+| dontSee                                                           | Verifies Web Element is not displayed on the Web Page                                                                                    |
+| seeEnabled                                                        | Verifies Web Element is enabled on the Web Page                                                                                          |
+| seeDisabled                                                       | Verifies Web Element is disabled on the Web Page                                                                                         |
+| selected                                                          | Verifies Web Element is selected on the Web Page. Used for Check Boxes and Radio Buttons                                                 |
+| deselected                                                        | Verifies Web Element is not selected on the Web Page. Used for Check Boxes and Radio Buttons                                             |
+| seeAlertMessage                                                   | Verifies Javascript Alert Message displayed if equal to expected message                                                                 |
 
 #### **Excel Data**
 
