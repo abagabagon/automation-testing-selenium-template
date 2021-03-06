@@ -143,6 +143,8 @@ I.click(PageLogin.LOGIN_BUTTON);
 | dontSeePartialTextOfTableRowListElementBasedOnTableRowElementText | Verifies partial text value if it does not exist in a Web Element List from a row in a table based on text value from the same row.      |
 | see                                                               | Verifies if Web Element is displayed on Web Page                                                                                         |
 | dontSee                                                           | Verifies Web Element is not displayed on the Web Page                                                                                    |
+| seeTableRowElementBasedOnTableRowElementText                      | Verifies Web Element is displayed from a row in a table based on text value from the same row.                                           |
+| dontSeeTableRowElementBasedOnTableRowElementText                  | Verifies Web Element is not displayed from a row in a table based on text value from the same row.                                       |
 | seeEnabled                                                        | Verifies Web Element is enabled on the Web Page                                                                                          |
 | seeDisabled                                                       | Verifies Web Element is disabled on the Web Page                                                                                         |
 | selected                                                          | Verifies Web Element is selected on the Web Page. Used for Check Boxes and Radio Buttons                                                 |
